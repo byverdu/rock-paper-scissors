@@ -1,6 +1,9 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 
-gem 'rspec'
-gem 'capybara'
-gem 'cucumber-sinatra'
+group :development, :test do
+	gem 'rspec'
+	gem 'capybara'
+	gem 'cucumber-sinatra'
+
+end

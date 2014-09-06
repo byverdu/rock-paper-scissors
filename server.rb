@@ -3,6 +3,7 @@ require './lib/player'
 require './lib/game'
 
 class RockPaperScissors < Sinatra::Base
+
   get '/' do
     erb :index
   end
@@ -12,7 +13,8 @@ class RockPaperScissors < Sinatra::Base
   end
 
   post '/register' do 
-  	@player = params[:name]
+  	PLAYER  = params[:name]
+    @player = PLAYER
   	erb :play	
   end
 
@@ -21,6 +23,8 @@ class RockPaperScissors < Sinatra::Base
   	player.picks = params[:pick]
   	computer = generate_computer
   	@game = Game.new(player, computer)
+
+    @computer = @game.player2.pick
   	erb :outcome
   end
 
