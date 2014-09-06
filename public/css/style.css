@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+*{
+	margin:  0;
+	padding: 0;
+}
+
+body{
+	background-color: #FFE9C5; 
+	font-family: 'Shadows Into Light', cursive;
+}
+
+.wrapper{
+	width:  900px;
+	margin: 0 auto;
+}
+
+.wrapper h1{
+	text-align: center; 
+	font-size: 70px;
+	text-shadow: 3px 1px 1px black;
+	color: white;
+	-webkit-text-stroke: 0.1px black;
+}
+
+section > a {
+	color: white;
+	text-decoration: none;
+	font-size: 23px;
+	border: 1px solid;
+	padding: 3%;
+	position: relative;
+	top: 100px;
+	left: 40%;
+	background: #FF6955;
+	border-radius: 50%;
+	box-shadow: 0px 2px 2px black,-2px -2px 1px black,1px 0px 5px black
+}
+
+section > a:hover{
+	font-size: 25px
+
+}
+
+button[value=Paper]{
+	
+	background: url('/images/paper.png');
+
+
+}
