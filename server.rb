@@ -30,6 +30,10 @@ class RockPaperScissors < Sinatra::Base
     erb :play
   end
 
+  configure :production do
+  require 'newrelic_rpm'
+  end
+
   def generate_computer
   	choice = ["Rock","Paper","Scissors"].sample
 
