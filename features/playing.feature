@@ -13,4 +13,5 @@ Scenario: A player can register
 Scenario: A player is playing
 	Given I've registered to play
 	When  I choose Paper
-	Then  I should see "RESULTS"
+	Then  I should see "RESULT"
+	And   I can play again

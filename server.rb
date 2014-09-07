@@ -4,8 +4,6 @@ require './lib/game'
 
 class RockPaperScissors < Sinatra::Base
 
-  PLAYER = 'name'
-
   get '/' do
     erb :index
   end
@@ -16,7 +14,6 @@ class RockPaperScissors < Sinatra::Base
 
   post '/register' do 
   	PLAYER  = params[:name]
-    @player = PLAYER
   	erb :play	
   end
 
@@ -30,7 +27,6 @@ class RockPaperScissors < Sinatra::Base
   end
 
   get "/play" do
-    @player = PLAYER
     erb :play
   end
 

@@ -28,5 +28,12 @@ When(/^I choose Paper$/) do
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1|
-  expect(page).to have_content("RESULTS")
+  expect(page).to have_content("RESULT")
+end
+
+Then(/^I can play again$/) do
+
+	find('a').click
+
+	visit '/play'
 end
