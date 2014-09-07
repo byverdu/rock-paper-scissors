@@ -10,10 +10,7 @@ Grab the code [from the repo](https://github.com/makersacademy/rockpaperscissors
 
 #### Task 2
 
-Deploy the application to Heroku. Have two separate deployment targets:
-
-1- stagging
-2- production
+Deploy the application to Heroku. Have two separate deployment targets: Stagging and Production.
 
 So you will have two apps on Heroku that you will be deploying to and three git remotes **(origin, stagging production)**
 
