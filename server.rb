@@ -4,6 +4,8 @@ require './lib/game'
 
 class RockPaperScissors < Sinatra::Base
 
+  PLAYER = 'name'
+
   get '/' do
     erb :index
   end
@@ -24,8 +26,12 @@ class RockPaperScissors < Sinatra::Base
   	computer = generate_computer
   	@game = Game.new(player, computer)
 
-    @computer = @game.player2.pick
   	erb :outcome
+  end
+
+  get "/play" do
+    @player = PLAYER
+    erb :play
   end
 
   def generate_computer
