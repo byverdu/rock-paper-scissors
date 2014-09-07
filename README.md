@@ -1,6 +1,8 @@
 ## ROCK-PAPER-SCISSORS
 =======================
 
+Play with my [RockPaperScissor](http://paper-rock.herokuapp.com/) app
+
 #### Task 1
 
 Grab the code [from the repo](https://github.com/makersacademy/rockpaperscissors), and create a sinatra based web application that you can paly on your browser.
