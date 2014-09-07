@@ -1,8 +1,10 @@
-<h4>Welcome <%= @player%></h4>
+<section class="play">
+	<h4>Welcome <%= @player%>, pick your choice.</h4>
 
-<form action="/play" method="POST">
-	<button name="pick" value="Paper">Paper</button>
-	<button name="pick" value="Rock">Rock</button>
-	<button name="pick" value="Scissors">Scissors</button>
-	<input type="hidden" name="name" value=<%=@name%>>
-</form>
+	<form action="/play" method="POST">
+		<button class="images" name="pick" value="Rock"    ></button>
+		<button class="images" name="pick" value="Paper"   ></button>
+		<button class="images" name="pick" value="Scissors"></button>
+		<input   type="hidden" name="name" value=<%=@name%>>
+	</form>
+</section>

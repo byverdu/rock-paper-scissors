@@ -32,7 +32,7 @@ body{
 
 }
 
-section > a {
+.index > a {
 	text-decoration: none;
 	font-size: 23px;
 	padding: 3%;
@@ -42,9 +42,21 @@ section > a {
 	border-radius: 50%;
 }
 
-section > a:hover{
+.index > a:hover,
+.register button:hover{
 	background:rgba(255,105,85,0.8);
 	color: black;
+}
+
+.index img{
+	border-radius: 50%;
+	border: 10px solid white;
+	margin-left: 15%;
+}
+
+.index a:hover + img {
+	
+border: 10px solid rgb(255,105,85);	
 
 }
 
@@ -74,10 +86,57 @@ section > a:hover{
 	cursor: -webkit-grabbing;
 }
 
+.play button{
+	border: 5px solid rgb(255,105,85);
+	box-shadow: 1px 1px 19px;
+	border-radius: 20% 5%;
+	position: relative;
+	top: 50px;
+	margin: 4%;
+	cursor: pointer;
+}
 
-button[value=Paper]{
+.play h4{
+
+	color: rgb(255,105,85);
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.play button[value=Paper]{
 	
-	background: url('/images/paper.png');
+	background: url('/images/paper.png') no-repeat center;
+	background-size: 215px 165px;
+	width: 215px;
+	height: 175px;
+}
 
+.play button[value=Rock]{
+	
+	background: url('/images/rock.png') no-repeat center;
+	background-size: 215px 165px;
+	width: 215px;
+	height: 175px;
 
 }
+
+.play button[value=Scissors]{
+
+	background: url('/images/scissors.png') no-repeat center;
+	background-size: 215px 165px;
+	width: 215px;
+	height: 175px;
+}
+
+.play button:hover{
+
+	box-shadow: 1px 1px 9px;
+
+}
+
+
+
+
+
+
