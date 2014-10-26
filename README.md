@@ -2,7 +2,17 @@
 
 Play with the [RockPaperScissor](http://paper-rock.herokuapp.com/) App
 
-You can see the staging App in this [link](http://paper-rock-staging.herokuapp.com/)
+
+### Objectives
+
+Understand how we can integrate Ruby code into a website
+
+
+### Technologies used
+
+1. RSpec
+2. Sinatra
+
 #### Task 1
 
 Grab the code [from the repo](https://github.com/makersacademy/rockpaperscissors), and create a sinatra based web application that you can paly on your browser.
