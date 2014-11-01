@@ -1,6 +1,6 @@
 ## ROCK-PAPER-SCISSORS
 
-Play with the [RockPaperScissor](http://paper-rock.herokuapp.com/) App
+Play a little bit with [RockPaperScissor](http://paper-rock.herokuapp.com/) App
 
 
 ### Objectives
