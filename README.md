@@ -41,4 +41,3 @@ Write a little about what can be done with NewRelic in your own words and unders
 #### Bonus Level
 
 Add some CSS to the app to make it beautiful.
-
